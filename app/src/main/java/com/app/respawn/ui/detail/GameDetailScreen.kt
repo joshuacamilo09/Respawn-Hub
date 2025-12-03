@@ -125,15 +125,3 @@ fun GameDetailScreen (game: Game, onBackClick: () -> Unit, onPurchase: (Purchasa
         )
     }
 }
-
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun GameDetailScreenPreview() {
-    RespawnTheme {
-        GameDetailScreen(
-            game = GameRepo.games[0],
-            onBackClick = {},
-            onPurchase = {}
-        )
-    }
-}

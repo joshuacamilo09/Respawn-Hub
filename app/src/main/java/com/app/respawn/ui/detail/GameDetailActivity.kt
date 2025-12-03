@@ -6,7 +6,10 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import com.app.respawn.model.Game
+import com.app.respawn.repository.GameRepo
 import com.app.respawn.ui.theme.RespawnTheme
 import kotlin.jvm.java
 
@@ -39,5 +42,16 @@ class GameDetailActivity : ComponentActivity (){
                 )
             }
         }
+    }
+}
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun GameDetailActivityScreen() {
+    RespawnTheme {
+        GameDetailScreen(
+            game = GameRepo.games[0],
+            onBackClick = {},
+            onPurchase = {}
+        )
     }
 }

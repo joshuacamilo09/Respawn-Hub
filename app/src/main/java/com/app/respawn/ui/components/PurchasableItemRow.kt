@@ -32,7 +32,7 @@ import com.app.respawn.ui.theme.RespawnTheme
 
 @Composable
 fun PurchasableItemRow(item: PurchasableItem, onClick: () -> Unit){
-3
+
     val context = LocalContext.current
     val iconId = context.resources.getIdentifier(item.iconResName, "drawable", context.packageName)
 
