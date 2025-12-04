@@ -25,8 +25,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.app.respawn.model.Game
 import com.app.respawn.repository.GameRepo
-import com.app.respawn.ui.main.GameListScreen
 import com.app.respawn.ui.theme.RespawnTheme
+import com.app.respawn.view.GameListScreen
 
 @Composable
 fun GameCard(game: Game, modifier: Modifier = Modifier, onClick: () -> Unit, previewDrawable: Int? = null){
